@@ -26,5 +26,12 @@ namespace ProjetAirFrance.Controllers
 
             return View();
         }
+
+        public ActionResult Trajets()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
     }
 }

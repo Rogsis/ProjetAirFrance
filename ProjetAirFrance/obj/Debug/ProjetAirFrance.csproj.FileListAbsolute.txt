@@ -164,3 +164,6 @@ c:\users\kchapelet2017\documents\visual studio 2015\Projects\ProjetAirFrance\Pro
 c:\users\kchapelet2017\documents\visual studio 2015\Projects\ProjetAirFrance\ProjetAirFrance\obj\Debug\ProjetAirFrance.pdb
 \\10.45.101.8\Users\kchapelet2017\Documents\Visual Studio 2015\Projects\ProjetAirFrance\ProjetAirFrance\bin\ProjetAirFrance.dll.CodeAnalysisLog.xml
 \\10.45.101.8\Users\kchapelet2017\Documents\Visual Studio 2015\Projects\ProjetAirFrance\ProjetAirFrance\bin\ProjetAirFrance.dll.lastcodeanalysissucceeded
+C:\Users\fmadec2017\Documents\Visual Studio 2015\Projects\ProjetAirFrance\ProjetAirFrance\obj\Debug\ProjetAirFrance.csprojResolveAssemblyReference.cache
+C:\Users\fmadec2017\Documents\Visual Studio 2015\Projects\ProjetAirFrance\ProjetAirFrance\obj\Debug\ProjetAirFrance.dll
+C:\Users\fmadec2017\Documents\Visual Studio 2015\Projects\ProjetAirFrance\ProjetAirFrance\obj\Debug\ProjetAirFrance.pdb
