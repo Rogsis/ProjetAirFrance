@@ -5,10 +5,10 @@ using System.Web;
 
 namespace AirFrance.Models
 {
-    public class Point
+    public class Avion : Point
     {
 
-        public float Longitude { get; set; }
-        public float Latitude { get; set; }
+        public int Id { get; set; }
+        public float NbPlace { get; set; }
     }
 }
