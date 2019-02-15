@@ -28,6 +28,7 @@ namespace ProjetAirFrance.Models
         private List<string> nomAero = new List<string>() { "Charles de Gaulle", "Pékin-Capitale", "Atlanta H.-Jackson", "Dubaï", "Tokyo-Haneda", "Londres-Heathrow", "Shanghaï - Pudong","Amsterdam-Schiphol","Istanbul-Atatürk","Delhi-Indira Gandhi","Séoul-Incheon","New York-John F. Kennedy", "Dallas / Fort Worth","Singapour-Changi","Chicago O'Hare","Las Vegas-McCarran", "Madrid-Barajas", "Mexico-B. Juárez", "Taïwan-Taoyuan","Los Angeles" };
         private List<string> nomCourtAero = new List<string>() { "CDG", "PCC", "AHJ", "DUB", "THJ", "LHR", "SPC", "ASN", "IAT", "DIG", "SIC", "NYJ", "DFW", "SCS", "COH", "LVM", "MBE", "MBJ", "TTT", "LAU" };
         private List<string> nomVilles = new List<string>() { "Paris FRA", "Pékin CHI", "Atlanta USA", "Dubaï EMA", "Tokyo JPN", "Londres UK", "Shangaï CHI", "Amsterdam NET", "Istambul TUR", "Delhi IND", "Seoul KOR", "New-York USA", "Dallas USA", "Singapour SGP", "Chicago USA", "Las Vegas USA", "Madrid ESP", "Mexico MEX","Dayuan TAI", "Los Angeles USA", };
+        private List<string> imageAero = new List<string>() { "paris.jpg", "pekin.jpg", "atlanta.jpg", "dubai.jpg", "tokyo.jpg", "londres.jpg", "shangai.jpg", "amsterdam.jpg", "istanbul.jpg", "delhi.jpg", "seoul.jpg", "new-york.jpg", "dallas.jpg", "singapour.jpg", "chicago.jpg", "las-vegas.jpg", "madrid.jpg", "mexico.jpg", "taiwan.jpg", "los-angeles.jpg", };
         private List<string> Prenoms = new List<string>() { "Kevin", "Baptise", "Gaetan", "Julien", "Axel", "Florian", "David", "Victor", "Antoine", "Thomas", "Simon", "Lucas" };
         private List<string> Noms = new List<string>() { "CHAPELET", "FOURRIER", "GOGAIL", "LE PRUNNEC", "LEFEVRE", "MADEC", "MICHEL", "PERROT", "PLUCHON", "TIERCIN", "TOULEC", "TREVEL" };
         private List<DateTime> dateNaissances = new List<DateTime>() {new DateTime(1993,02,24), new DateTime(1993, 06, 10), new DateTime(1996, 02, 24), new DateTime(1993, 03, 20), new DateTime(1990, 08, 24), new DateTime(1985, 11, 10), };
@@ -51,7 +52,7 @@ namespace ProjetAirFrance.Models
             List<Aeroport> aeroports = new List<Aeroport>();
             for (var i=1; i<=20; i++)
             {
-                Aeroport aeroport = new Aeroport() { Id = i, nom = nomAero[i - 1], nomCourt = nomCourtAero[i - 1], nomVille = nomVilles[i-1] };
+                Aeroport aeroport = new Aeroport() { Id = i, nom = nomAero[i - 1], nomCourt = nomCourtAero[i - 1], nomVille = nomVilles[i-1], image = imageAero[i - 1] };
                 aeroports.Add(aeroport);
             }
             return aeroports;
