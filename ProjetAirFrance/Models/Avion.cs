@@ -11,5 +11,9 @@ namespace AirFrance.Models
         public int Id { get; set; }
         public float NbPlace { get; set; }
 
+        public bool PlaceDisponible<P>(List<P> passagers) where P : List<Passager>
+        {
+            return (this.NbPlace <= passagers.Count);
+        }
     }
 }
