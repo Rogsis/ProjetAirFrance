@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "Trajets";
+}
+
+<h1 class="display-4">Nos trajets disponibles</h1>
+
+<br />
+
+<div class="container">
+
+    @if (Model != null)
+        {
+
+            foreach (var trajet in Model)
+            {
+                <div class="card mb-12">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="~/Content/images/newyork.jpg" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h1 class="display-4">@trajet.AeroportDepart <i class="fas fa-plane"></i> @trajet.AeroportArrive</h1>
+                                <ul class="list-unstyled">
+                                    <li><p class="card-text"><i class="far fa-calendar"></i> Départ le @trajet.DateDepart</p></li>
+                                    <li><p class="card-text"><i class="far fa-calendar-check"></i> Arrivée le @trajet.DateArrive</p></li>
+                                    <li><p class="card-text"><i class="fas fa-users"></i> Nombres de places : 327</p></li>
+                                </ul>
+                                <div class="row">
+                                    <div class="col-md-10"><button type="button" class="btn btn-outline-primary">Détails</button></div>
+                                    <div class="col-md-2"><h1 class="display-4">@trajet.Prix</h1></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        }
+    }
+
+   
+
+</div>
+

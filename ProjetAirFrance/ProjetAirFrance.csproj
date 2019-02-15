@@ -327,15 +327,13 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\vueListeVols.cshtml" />
-    <Content Include="Views\Home\Trajets.cshtml" />
+    <Content Include="Views\Trajets\Trajets.cshtml" />
     <Content Include="Views\Home\Vol.cshtml" />
     <Content Include="Views\Home\Passagers.cshtml" />
     <Content Include="Views\Home\Inscription.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Passagers\" />
-    <Folder Include="Views\Trajets\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -346,6 +344,9 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -63,12 +63,13 @@ namespace ProjetAirFrance.Models
             List<Aeroport> aeroports = this.getAeroports();
             List<Avion> avions = this.getAvions();
             List<Passager> passagers = this.getPassagers();
-            passagers.Take(180);
             IEnumerable<Trajet> trajets = new List<Trajet>();
             for (var i =1; i<=10; i++)
             {
-                Trajet trajet = new Trajet() { Id = i, Avion = avions[i + 5], AeroportDepart = aeroports[i], AeroportArrive = aeroports[20 - i], Prix = prix[i], DateDepart = datesDepart[i], DateArrive = datesArrive[i], listPassager = passagers.Take(180) };
+                Trajet trajet = new Trajet() { Id = i, Avion = avions[i + 5], AeroportDepart = aeroports[i-1], AeroportArrive = aeroports[aeroports.Count() - i], Prix = prix[i-1], DateDepart = datesDepart[i-1], DateArrive = datesArrive[i-1], listPassager = passagers.Take(180) };
+                trajets.ToList().Add(trajet);
             }
+            Console.WriteLine("===================="+trajets.ToList().Count());
             return trajets;
         }
 
