@@ -330,6 +330,7 @@
     <Content Include="Views\Home\Trajets.cshtml" />
     <Content Include="Views\Home\Vol.cshtml" />
     <Content Include="Views\Home\Passagers.cshtml" />
+    <Content Include="Views\Home\Inscription.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
