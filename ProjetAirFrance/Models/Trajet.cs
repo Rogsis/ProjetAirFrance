@@ -8,7 +8,8 @@ namespace AirFrance.Models
     public class Trajet
     {
 {
-        public DateTime DateHeureTrajet { get; set; }
+        public DateTime DateHeureTrajetDepart { get; set; }
+        public DateTime DateHeureTrajetArrive { get; set; }
 
         public float Prix { get; set; }
 

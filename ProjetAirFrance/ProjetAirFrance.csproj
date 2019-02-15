@@ -200,13 +200,20 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PassagersController.cs" />
+    <Compile Include="Controllers\TrajetsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Aeroport.cs" />
+    <Compile Include="Models\Avion.cs" />
+    <Compile Include="Models\Generics.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Passager.cs" />
     <Compile Include="Models\Point.cs" />
+    <Compile Include="Models\Trajet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -325,6 +332,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Passagers\" />
+    <Folder Include="Views\Trajets\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
