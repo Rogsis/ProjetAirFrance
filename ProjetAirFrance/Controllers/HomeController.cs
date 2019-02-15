@@ -27,26 +27,5 @@ namespace ProjetAirFrance.Controllers
             return View();
         }
 
-        public ActionResult Trajets()
-        {
-            ViewBag.Message = "Liste des trajets";
-
-            return View();
-        }
-
-        public ActionResult Vol()
-        {
-            ViewBag.Message = "Détails du vol";
-
-            return View();
-        }
-
-        public ActionResult Passagers()
-        {
-            ViewBag.Message = "Liste des passagers";
-
-            return View();
-        }
-
     }
 }

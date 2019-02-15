@@ -8,8 +8,8 @@ namespace AirFrance.Models
     public class Aeroport: Point
     {
         public int Id { get; set; }
-        public String nom { get; set; }
-        public String nomCourt { get; set; }
-        public String nomVille { get; set; }
+        public string nom { get; set; }
+        public string nomCourt { get; set; }
+        public string nomVille { get; set; }
     }
 }

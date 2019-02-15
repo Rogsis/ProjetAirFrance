@@ -18,10 +18,14 @@
                 <img src="~/Content/images/2000px-Air_France_Logo.svg.png" style="width: 30%;" alt="">
             </a>
         </div>
-        <nav class="col-md-2">
-            @Html.ActionLink("Consulter les vols", "Trajets", "Home",
+        @*<nav class="col-md-2">
+            @Html.ActionLink("Consulter les vols", "Trajets", "Trajets",
             new { @class = "p-2 text-dark" })
+        </nav>*@
+        <nav class="col-md-2">
+            <input type="button" value="Create" onclick="location.href='@Url.Action("Trajets", "Trajets")'" />
         </nav>
+       
       
     </div>
 

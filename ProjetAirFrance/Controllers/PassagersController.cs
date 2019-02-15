@@ -9,7 +9,7 @@ namespace ProjetAirFrance.Controllers
     public class PassagersController : Controller
     {
         // GET: Passagers
-        public ActionResult Index()
+        public ActionResult Passagers()
         {
             return View();
         }
