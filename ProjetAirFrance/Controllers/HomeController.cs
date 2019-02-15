@@ -48,5 +48,11 @@ namespace ProjetAirFrance.Controllers
             return View();
         }
 
+        public ActionResult Inscription()
+        {
+            ViewBag.Message = "Inscription au vol";
+
+            return View();
+        }
     }
 }
