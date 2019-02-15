@@ -329,7 +329,8 @@
     <Content Include="Views\vueListeVols.cshtml" />
     <Content Include="Views\Trajets\Trajets.cshtml" />
     <Content Include="Views\Home\Vol.cshtml" />
-    <Content Include="Views\Passagers\Passagers.cshtml" />
+    <Content Include="Views\Home\Passagers.cshtml" />
+    <Content Include="Views\Home\Inscription.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
