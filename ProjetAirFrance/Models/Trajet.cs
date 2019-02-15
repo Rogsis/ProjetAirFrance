@@ -7,15 +7,16 @@ namespace AirFrance.Models
 {
     public class Trajet
     {
-{
-        public DateTime DateHeureTrajet { get; set; }
+        public int Id { get; set; }
+        public DateTime DateDepart { get; set; }
+        public DateTime DateArrive { get; set; }
 
         public float Prix { get; set; }
 
-        public Aeroport AeroportDepart;
-        public Aeroport AeroportArrive;
-        public Avion Avion;
-        public List<Passager> listPassager;
+        public Aeroport AeroportDepart { get; set; }
+        public Aeroport AeroportArrive { get; set; }
+        public Avion Avion { get; set; }
+        public IEnumerable<Passager> listPassager { get; set; }
 
     }
 }

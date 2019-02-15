@@ -10,5 +10,6 @@ namespace AirFrance.Models
 
         public int Id { get; set; }
         public float NbPlace { get; set; }
+
     }
 }
